@@ -1,0 +1,367 @@
+{
+  "locationsSearch": {
+    "sortBy": [
+      {
+        "fieldName": "companyName",
+        "direction": "ASC"
+      }
+    ],
+    "reSorted": true,
+    "resultStartIndex": 0,
+    "resultsPerPage": 25,
+    "results": [
+      {
+        "id": "001",
+        "name": "This is Made in Swagger",
+        "version": 0,
+        "tenantId": 0,
+        "companyName": "Project 55 Polygon Company",
+        "address": {
+          "address1": "1N State Street",
+          "address2": "STE 1500",
+          "city": "Chicago",
+          "postalCode": "60603",
+          "state": "IL",
+          "country": "US"
+        },
+        "contact": {
+          "email": "bugsbunny69@acme.com",
+          "firstName": "Bugs",
+          "lastName": "Bunny",
+          "phoneNumber": "312-909-0000"
+        },
+        "geofence": {
+          "type": "POLYGON",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -87.63008045992375,
+                  41.8834336506445
+                ],
+                [
+                  -87.62402939638615,
+                  41.8830502414344
+                ],
+                [
+                  -87.62653994402409,
+                  41.880286431981006
+                ],
+                [
+                  -87.63855624041078,
+                  41.88252305001394
+                ],
+                [
+                  -87.63709711870668,
+                  41.89281048461285
+                ],
+                [
+                  -87.6289432033014,
+                  41.890446438177
+                ],
+                [
+                  -87.62980151018617,
+                  41.88367328023247
+                ],
+                [
+                  -87.62276339373109,
+                  41.890765909024395
+                ],
+                [
+                  -87.62036013445375,
+                  41.88412058639214
+                ]
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "id": "distance1",
+        "name": "This is Made in Swagger",
+        "version": 0,
+        "tenantId": 0,
+        "companyName": "Project 55 Distance Based Company",
+        "address": {
+          "address1": "1N State Street",
+          "address2": "STE 1500",
+          "city": "Chicago",
+          "postalCode": "60603",
+          "state": "IL",
+          "country": "US"
+        },
+        "contact": {
+          "email": "bugsbunny69@acme.com",
+          "firstName": "Bugs",
+          "lastName": "Bunny",
+          "phoneNumber": "312-909-0000"
+        },
+        "geofence": {
+          "type": "DISTANCE",
+          "value": 1000,
+          "units": "METERS",
+          "geometry": null
+        }
+      },
+      {
+        "id": "eta1",
+        "name": "This is Made in Swagger",
+        "version": 0,
+        "tenantId": 0,
+        "companyName": "Project 55 Time Based Company",
+        "address": {
+          "address1": "1N State Street",
+          "address2": "STE 1500",
+          "city": "Chicago",
+          "postalCode": "60603",
+          "state": "IL",
+          "country": "US"
+        },
+        "contact": {
+          "email": "Dontplaywithme@acme.com",
+          "firstName": "Debo",
+          "lastName": "FromCompton",
+          "phoneNumber": "312-909-0000"
+        },
+        "geofence": {
+          "type": "TIME",
+          "value": "300",
+          "units": "MINUTES",
+          "geometry": {}
+        }
+      },
+      {
+        "id": "e06691b1-5d36-4f13-8955-b0fe5771e935",
+        "tenantId": 1006,
+        "companyName": "Aquamini",
+        "address": {
+          "address1": "1 N State St",
+          "address2": null,
+          "postalCode": "60602",
+          "city": "Chicago",
+          "state": "IL",
+          "country": "US"
+        },
+        "contacts": [
+          {
+            "address1": "123 Main St",
+            "address2": "STE 1500",
+            "city": "Chicago",
+            "state": "IL",
+            "companyName": "DarkA$$Shades",
+            "contactName": "Shawn White",
+            "phoneNumber": "555-555-5555",
+            "phoneNumberCountryCode": "555",
+            "postalCode": "60602",
+            "email": "weezyFbaby@ymcmb.com",
+            "id": "hot"
+          }
+        ],
+        "coordinates": {
+          "latitude": 41.88238,
+          "longitude": -87.627,
+          "accuracyInMeters": 0,
+          "localTimeZoneId": "America/Chicago"
+        },
+        "hours": {
+          "mondayFrom": "05:00:00",
+          "mondayTo": "22:00:00",
+          "tuesdayFrom": "05:00:00",
+          "tuesdayTo": "22:00:00",
+          "wednesdayFrom": "05:00:00",
+          "wednesdayTo": "22:00:00",
+          "thursdayFrom": "05:00:00",
+          "thursdayTo": "22:00:00",
+          "fridayFrom": "05:00:00",
+          "fridayTo": "22:00:00"
+        },
+        "geofence": {
+          "id": "dc3112f0-f367-4b8d-b224-f025649e76e6",
+          "type": "TIME",
+          "value": 500,
+          "units": "MINUTES",
+          "geometry": null,
+          "source": "LOCATION"
+        }
+      }
+    ]
+  },
+  "location": [
+    {
+      "id": "001",
+      "name": "This is Made in Swagger",
+      "version": 0,
+      "tenantId": 0,
+      "companyName": "Project 55 Polygon Company",
+      "address": {
+        "address1": "1N State Street",
+        "address2": "STE 1500",
+        "city": "Chicago",
+        "postalCode": "60603",
+        "state": "IL",
+        "country": "US"
+      },
+      "contact": {
+        "email": "bugsbunny69@acme.com",
+        "firstName": "Bugs",
+        "lastName": "Bunny",
+        "phoneNumber": "312-909-0000"
+      },
+      "geofence": {
+        "type": "POLYGON",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.63008045992375,
+                41.8834336506445
+              ],
+              [
+                -87.62402939638615,
+                41.8830502414344
+              ],
+              [
+                -87.62653994402409,
+                41.880286431981006
+              ],
+              [
+                -87.63855624041078,
+                41.88252305001394
+              ],
+              [
+                -87.63709711870668,
+                41.89281048461285
+              ],
+              [
+                -87.6289432033014,
+                41.890446438177
+              ],
+              [
+                -87.62980151018617,
+                41.88367328023247
+              ],
+              [
+                -87.62276339373109,
+                41.890765909024395
+              ],
+              [
+                -87.62036013445375,
+                41.88412058639214
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "distance1",
+      "name": "This is Made in Swagger",
+      "version": 0,
+      "tenantId": 0,
+      "companyName": "Project 55 Distance Based Company",
+      "address": {
+        "address1": "1N State Street",
+        "address2": "STE 1500",
+        "city": "Chicago",
+        "postalCode": "60603",
+        "state": "IL",
+        "country": "US"
+      },
+      "contact": {
+        "email": "bugsbunny69@acme.com",
+        "firstName": "Bugs",
+        "lastName": "Bunny",
+        "phoneNumber": "312-909-0000"
+      },
+      "geofence": {
+        "type": "DISTANCE",
+        "value": 1000,
+        "units": "METERS",
+        "geometry": null
+      }
+    },
+    {
+      "id": "eta1",
+      "name": "This is Made in Swagger",
+      "version": 0,
+      "tenantId": 0,
+      "companyName": "Project 55 Time Based Company",
+      "address": {
+        "address1": "1N State Street",
+        "address2": "STE 1500",
+        "city": "Chicago",
+        "postalCode": "60603",
+        "state": "IL",
+        "country": "US"
+      },
+      "contact": {
+        "email": "Dontplaywithme@acme.com",
+        "firstName": "Debo",
+        "lastName": "FromCompton",
+        "phoneNumber": "312-909-0000"
+      },
+      "geofence": {
+        "type": "TIME",
+        "value": "300",
+        "units": "MINUTES",
+        "geometry": {}
+      }
+    },
+    {
+      "id": "e06691b1-5d36-4f13-8955-b0fe5771e935",
+      "tenantId": 1006,
+      "companyName": "Aquamini",
+      "address": {
+        "address1": "1 N State St",
+        "address2": null,
+        "postalCode": "60602",
+        "city": "Chicago",
+        "state": "IL",
+        "country": "US"
+      },
+      "contacts": [
+        {
+          "address1": "123 Main St",
+          "address2": "STE 1500",
+          "city": "Chicago",
+          "state": "IL",
+          "companyName": "DarkA$$Shades",
+          "contactName": "Shawn White",
+          "phoneNumber": "555-555-5555",
+          "phoneNumberCountryCode": "555",
+          "postalCode": "60602",
+          "email": "weezyFbaby@ymcmb.com",
+          "id": "hot"
+        }
+      ],
+      "coordinates": {
+        "latitude": 41.88238,
+        "longitude": -87.627,
+        "accuracyInMeters": 0,
+        "localTimeZoneId": "America/Chicago"
+      },
+      "hours": {
+        "mondayFrom": "05:00:00",
+        "mondayTo": "22:00:00",
+        "tuesdayFrom": "05:00:00",
+        "tuesdayTo": "22:00:00",
+        "wednesdayFrom": "05:00:00",
+        "wednesdayTo": "22:00:00",
+        "thursdayFrom": "05:00:00",
+        "thursdayTo": "22:00:00",
+        "fridayFrom": "05:00:00",
+        "fridayTo": "22:00:00"
+      },
+      "geofence": {
+        "id": "dc3112f0-f367-4b8d-b224-f025649e76e6",
+        "type": "TIME",
+        "value": 50,
+        "units": "MINUTES",
+        "geometry": null,
+        "source": "LOCATION"
+      }
+    }
+  ]
+}

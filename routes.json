@@ -1,0 +1,6 @@
+{
+  "/api/portal/v2/public/:shareToken/notes": "/publicNotes",
+  "/api/portal/v2/shipments?mode=:shipmentMode&shipmentId=:shipmentId": "/shipments/:shipmentId",
+  "/api/portal/v2/location/v2/locations/search": "/locationsSearch",
+  "/api/portal/v2/location/v2/locations/:locationId": "/location/:locationId"
+}

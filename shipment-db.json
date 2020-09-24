@@ -1,0 +1,5548 @@
+{
+  "shipments": [
+    {
+      "id": "1234",
+      "identifiers": [],
+      "currentStatus": "IN_TRANSIT",
+      "currentStatusDateTime": "2019-09-15T15:53:00",
+      "legs": [
+        {
+          "id": "test-tl-leg-id",
+          "mode": "TL",
+          "positions": [
+            {
+              "label": null,
+              "lat": 0,
+              "lng": 0,
+              "time": null
+            },
+            {
+              "label": null,
+              "lat": 0,
+              "lng": 0,
+              "time": null
+            },
+            {
+              "label": null,
+              "lat": 0,
+              "lng": 0,
+              "time": null
+            },
+            {
+              "label": null,
+              "lat": 0,
+              "lng": 0,
+              "time": null
+            },
+            {
+              "label": null,
+              "lat": 0,
+              "lng": 0,
+              "time": null
+            }
+          ],
+          "events": [
+            {
+              "type": "IN_TRANSIT",
+              "dateTime": "2019-04-02T12:53:00",
+              "timezone": "CST",
+              "description": "This should be the first in transit event"
+            },
+            {
+              "type": "EN_ROUTE",
+              "dateTime": "2019-04-19T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the EN ROUTE event"
+            }
+          ],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Chicago Distribution Center",
+              "location": {
+                "city": "Chicago",
+                "state": "IL",
+                "address": "1419 W Carrol Ave",
+                "lat": 41.887121,
+                "lng": -87.664137
+              },
+              "appointmentWindow": {
+                "start": "2019-04-10T08:00:00",
+                "endDate": "2019-04-12T17:00:00"
+              },
+              "status": "DEPARTED",
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "type": "EN_ROUTE",
+                  "dateTime": "2019-04-19T19:53:00",
+                  "timezone": "CST",
+                  "description": "This was something we really needed"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Diggity Dogs",
+              "location": {
+                "city": "Higginsville",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "DEPARTED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "timezone": "CST",
+                  "dateTime": "2019-04-05T15:53:00"
+                }
+              ]
+            },
+            {
+              "stopNumber": 3,
+              "stopName": "Joe's BBQ",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "ARRIVED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "EN_ROUTE",
+                  "dateTime": "2019-04-19T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the EN ROUTE event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 4,
+              "stopName": "Union Station",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "type": "EN_ROUTE",
+                  "dateTime": "2019-04-19T19:53:00",
+                  "timezone": "CST"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "test-ocean-leg-id",
+          "mode": "OCEAN",
+          "events": [],
+          "positions": [],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Union Station",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "TRANSFER",
+              "events": []
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Oceanside Hot Dogs",
+              "location": {
+                "city": "San Diego",
+                "state": "CA",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "DESTINATION",
+              "events": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scheduled",
+      "identifiers": [],
+      "currentStatus": "SCHEDULED",
+      "currentStatusDateTime": "2019-09-15T15:53:00",
+      "legs": [
+        {
+          "id": "test-tl-leg-id",
+          "mode": "TL",
+          "positions": [],
+          "events": [
+            {
+              "type": "UNKNOWN",
+              "dateTime": "2019-04-06T16:45:00",
+              "timezone": "CST",
+              "description": "UNKNOWN"
+            }
+          ],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Meyers Hot Dogs",
+              "location": {
+                "city": "Chicago",
+                "state": "IL",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "appointmentWindow": {
+                "startDate": "2019-04-10T15:53:00",
+                "endDate": "2019-04-18T15:53:00"
+              },
+              "status": "EN_ROUTE",
+              "type": "ORIGIN",
+              "events": []
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Diggity Dogs",
+              "location": {
+                "city": "Higginsville",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "INTERMEDIATE",
+              "events": []
+            },
+            {
+              "stopNumber": 3,
+              "stopName": "Joe's BBQ",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "INTERMEDIATE",
+              "events": []
+            },
+            {
+              "stopNumber": 4,
+              "stopName": "Union Station",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "DESTINATION",
+              "events": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first-pickup",
+      "identifiers": [],
+      "currentStatus": "IN_TRANSIT",
+      "currentStatusDateTime": "2019-09-15T15:53:00",
+      "legs": [
+        {
+          "id": "test-tl-leg-id",
+          "mode": "TL",
+          "positions": [],
+          "events": [
+            {
+              "type": "UNKNOWN",
+              "dateTime": "2019-04-06T16:45:00",
+              "timezone": "CST",
+              "description": "UNKNOWN"
+            }
+          ],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Meyers Hot Dogs",
+              "location": {
+                "city": "Chicago",
+                "state": "IL",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "appointmentWindow": {
+                "startDate": "2019-04-10T15:53:00",
+                "endDate": "2019-04-18T15:53:00"
+              },
+              "status": "ARRIVED",
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the ARRIVED event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Diggity Dogs",
+              "location": {
+                "city": "Higginsville",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "INTERMEDIATE",
+              "events": []
+            },
+            {
+              "stopNumber": 3,
+              "stopName": "Joe's BBQ",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "INTERMEDIATE",
+              "events": []
+            },
+            {
+              "stopNumber": 4,
+              "stopName": "Union Station",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "DESTINATION",
+              "events": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-between-stops",
+      "identifiers": [],
+      "currentStatus": "IN_TRANSIT",
+      "currentStatusDateTime": "2019-09-15T15:53:00",
+      "legs": [
+        {
+          "id": "test-tl-leg-id",
+          "mode": "TL",
+          "positions": [],
+          "events": [
+            {
+              "type": "UNKNOWN",
+              "dateTime": "2019-04-06T16:45:00",
+              "timezone": "CST",
+              "description": "UNKNOWN"
+            },
+            {
+              "type": "EN_ROUTE",
+              "dateTime": "2019-04-19T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the EN ROUTE event"
+            },
+            {
+              "type": "ARRIVED",
+              "dateTime": "2019-04-21T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the ARRIVED event"
+            },
+            {
+              "type": "DEPARTED",
+              "dateTime": "2019-04-21T16:59:00",
+              "timezone": "CST",
+              "description": "This should be the DEPARTED event"
+            }
+          ],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Meyers Hot Dogs",
+              "location": {
+                "city": "Chicago",
+                "state": "IL",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "appointmentWindow": {
+                "startDate": "2019-04-10T15:53:00",
+                "endDate": "2019-04-18T15:53:00"
+              },
+              "status": "DEPARTED",
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the ARRIVED event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Diggity Dogs",
+              "location": {
+                "city": "Higginsville",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "DEPARTED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 3,
+              "stopName": "Joe's BBQ",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "ARRIVED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 4,
+              "stopName": "Union Station",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "EN_ROUTE",
+              "type": "DESTINATION",
+              "events": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delivered",
+      "identifiers": [],
+      "currentStatus": "SCHEDULED",
+      "currentStatusDateTime": "2019-09-15T15:53:00",
+      "legs": [
+        {
+          "id": "test-tl-leg-id",
+          "mode": "TL",
+          "positions": [],
+          "events": [
+            {
+              "type": "UNKNOWN",
+              "dateTime": "2019-04-06T16:45:00",
+              "timezone": "CST",
+              "description": "UNKNOWN"
+            },
+            {
+              "type": "EN_ROUTE",
+              "dateTime": "2019-04-19T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the EN ROUTE event"
+            },
+            {
+              "type": "ARRIVED",
+              "dateTime": "2019-04-21T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the PICKED UP event"
+            },
+            {
+              "type": "DEPARTED",
+              "dateTime": "2019-04-21T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the OUT FOR DELIVERY event"
+            },
+            {
+              "type": "ARRIVED",
+              "dateTime": "2019-04-19T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the ARRIVED event"
+            },
+            {
+              "type": "DEPARTED",
+              "dateTime": "2019-04-21T16:59:00",
+              "timezone": "CST",
+              "description": "This should be the DEPARTED event"
+            }
+          ],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Meyers Hot Dogs",
+              "location": {
+                "city": "Chicago",
+                "state": "IL",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "appointmentWindow": {
+                "startDate": "2019-04-10T15:53:00",
+                "endDate": "2019-04-18T15:53:00"
+              },
+              "status": "DEPARTED",
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Diggity Dogs",
+              "location": {
+                "city": "Higginsville",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "DEPARTED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 3,
+              "stopName": "Joe's BBQ",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "DEPARTED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 4,
+              "stopName": "Union Station",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "DEPARTED",
+              "type": "DESTINATION",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the DELIVERED event"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mode-transfer",
+      "identifiers": [],
+      "currentStatus": "AT_STOP",
+      "currentStatusDateTime": "2019-09-15T15:53:00",
+      "legs": [
+        {
+          "id": "test-tl-leg-id",
+          "mode": "OCEAN",
+          "positions": [
+            {
+              "lng": 118.135,
+              "lat": 24.3696
+            },
+            {
+              "lng": 117.979,
+              "lat": 24.453
+            },
+            {
+              "lng": 118.385,
+              "lat": 24.1026
+            },
+            {
+              "lng": 118.16,
+              "lat": 23.7527
+            },
+            {
+              "lng": 118.029,
+              "lat": 23.5292
+            },
+            {
+              "lng": 117.946,
+              "lat": 23.4145
+            },
+            {
+              "lng": 117.777,
+              "lat": 23.246
+            },
+            {
+              "lng": 121.279,
+              "lat": 25.298
+            },
+            {
+              "lng": 121.353,
+              "lat": 25.3582
+            },
+            {
+              "lng": 121.577,
+              "lat": 25.4974
+            },
+            {
+              "lng": 121.846,
+              "lat": 25.6702
+            },
+            {
+              "lng": 126.916,
+              "lat": 28.7321
+            },
+            {
+              "lng": 131.775,
+              "lat": 31.222
+            },
+            {
+              "lng": 137.346,
+              "lat": 33.4546
+            },
+            {
+              "lng": 144.673,
+              "lat": 36.6968
+            },
+            {
+              "lng": 156.807,
+              "lat": 41.0087
+            },
+            {
+              "lng": -169.031,
+              "lat": 37.8486
+            },
+            {
+              "lng": -141.447,
+              "lat": 35.3688
+            },
+            {
+              "lng": -127.93,
+              "lat": 34.5681
+            },
+            {
+              "lng": -122.03,
+              "lat": 34.4072
+            },
+            {
+              "lng": -119.732,
+              "lat": 34.1482
+            },
+            {
+              "lng": -118.796,
+              "lat": 33.8184
+            },
+            {
+              "lng": -118.434,
+              "lat": 33.6427
+            },
+            {
+              "lng": -118.229,
+              "lat": 33.6607
+            }
+          ],
+          "events": [
+            {
+              "type": "EN_ROUTE",
+              "dateTime": "2019-04-06T16:45:00",
+              "timezone": "CST",
+              "description": "En route to port."
+            }
+          ],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of Beihai",
+              "location": {
+                "city": "Beihai",
+                "state": "China",
+                "address": "",
+                "lat": "21.4799",
+                "lng": "109.107"
+              },
+              "appointmentWindow": {
+                "startDate": "2019-04-10T15:53:00",
+                "endDate": "2019-04-18T15:53:00"
+              },
+              "status": "DEPARTED",
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": "33.740103",
+                "lng": "-118.281422"
+              },
+              "status": "ARRIVED",
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the ARRIVED event"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rail-leg",
+          "mode": "RAIL",
+          "events": [],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": "33.740103",
+                "lng": "-118.281422"
+              },
+              "status": "ARRIVED",
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the ARRIVED event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "BNSF Railyard",
+              "location": {
+                "city": "Chicago",
+                "state": "IL",
+                "address": "",
+                "lat": "41.863707",
+                "lng": "-87.638118"
+              },
+              "status": "EN_ROUTE",
+              "type": "DESTINATION",
+              "events": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finished",
+      "identifiers": [],
+      "currentStatus": "IN_TRANSIT",
+      "currentStatusDateTime": "2019-09-15T15:53:00",
+      "legs": [
+        {
+          "id": "test-tl-leg-id",
+          "mode": "OCEAN",
+          "positions": [],
+          "events": [
+            {
+              "type": "UNKNOWN",
+              "dateTime": "2019-04-06T16:45:00",
+              "timezone": "CST",
+              "description": "UNKNOWN"
+            },
+            {
+              "type": "EN_ROUTE",
+              "dateTime": "2019-04-19T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the EN ROUTE event"
+            },
+            {
+              "type": "ARRIVED",
+              "dateTime": "2019-04-21T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the PICKED UP event"
+            },
+            {
+              "type": "DEPARTED",
+              "dateTime": "2019-04-21T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the OUT FOR DELIVERY event"
+            },
+            {
+              "type": "ARRIVED",
+              "dateTime": "2019-04-19T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the ARRIVED event"
+            },
+            {
+              "type": "DEPARTED",
+              "dateTime": "2019-04-21T16:59:00",
+              "timezone": "CST",
+              "description": "This should be the DEPARTED event"
+            },
+            {
+              "type": "DEPARTED",
+              "dateTime": "2019-04-21T19:53:00",
+              "timezone": "CST",
+              "description": "This should be the OUT FOR DELIVERY event"
+            }
+          ],
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Meyers Hot Dogs",
+              "location": {
+                "city": "Chicago",
+                "state": "IL",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "appointmentWindow": {
+                "startDate": "2019-04-10T15:53:00",
+                "endDate": "2019-04-18T15:53:00"
+              },
+              "status": "DEPARTED",
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Diggity Dogs",
+              "location": {
+                "city": "Higginsville",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "DEPARTED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 3,
+              "stopName": "Joe's BBQ",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "DEPARTED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the PICKED UP event"
+                }
+              ]
+            },
+            {
+              "stopNumber": 4,
+              "stopName": "Union Station",
+              "location": {
+                "city": "Kansas City",
+                "state": "MO",
+                "address": "",
+                "lat": 0,
+                "lng": 0
+              },
+              "status": "DEPARTED",
+              "type": "INTERMEDIATE",
+              "events": [
+                {
+                  "type": "ARRIVED",
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timezone": "CST",
+                  "description": "This should be the DELIVERED event"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mode-transfer-on-rail",
+      "currentStatus": "COMPLETED",
+      "currentStatusDateTime": "2019-05-02T06:15:01",
+      "eta": null,
+      "identifiers": [],
+      "eventsWithUnknownDates": null,
+      "legs": [
+        {
+          "id": "test-ocean-leg-id",
+          "mode": "OCEAN",
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "carrierInfo": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of Beihai",
+              "location": {
+                "city": "Beihai",
+                "state": "China",
+                "address": "",
+                "lat": 21.4799,
+                "lng": 109.107
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timeZone": null,
+                  "description": "This is when the container arrived to the yard filled",
+                  "type": "GATE_IN_FULL"
+                },
+                {
+                  "dateTime": "2019-04-21T20:02:00",
+                  "timeZone": null,
+                  "description": "This is when the container was loaded onto the vessel",
+                  "type": "LOADED"
+                },
+                {
+                  "dateTime": "2019-04-21T22:53:00",
+                  "timeZone": null,
+                  "description": "This is when the container arrived to the yard filled",
+                  "type": "DEPARTED"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timeZone": null,
+                  "description": "This should be when the vessel was berthing",
+                  "type": "BERTHING"
+                },
+                {
+                  "dateTime": "2019-05-01T18:02:00",
+                  "timeZone": null,
+                  "description": "This should be when the vessel ARRIVED",
+                  "type": "ARRIVED"
+                },
+                {
+                  "dateTime": "2019-05-01T20:25:00",
+                  "timeZone": null,
+                  "description": "This should be when the container was dishcarged from the vessel",
+                  "type": "DISCHARGED"
+                },
+                {
+                  "dateTime": "2019-05-01T21:36:00",
+                  "timeZone": null,
+                  "description": "This should be when the customs hold was released",
+                  "type": "CUSTOMS_HOLD_RELEASED"
+                },
+                {
+                  "dateTime": "2019-05-01T21:36:00",
+                  "timeZone": null,
+                  "description": "This should be when the line hold was released",
+                  "type": "LINE_HOLD_RELEASED"
+                },
+                {
+                  "dateTime": "2019-05-01T21:36:00",
+                  "timeZone": null,
+                  "description": "This should be when the other hold was released",
+                  "type": "OTHER_HOLD_RELEASED"
+                },
+                {
+                  "dateTime": "2019-05-01T22:30:00",
+                  "timeZone": null,
+                  "description": "This should be when the container left the ocean yard",
+                  "type": "TRACKING_STOPPED"
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "dateTime": "2019-04-21T22:55:00",
+              "timeZone": null,
+              "description": "En route to port.",
+              "type": "EN_ROUTE"
+            }
+          ],
+          "positions": [
+            {
+              "time": null,
+              "lng": 120.32,
+              "lat": 24.2998,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.117,
+              "lat": 25.5238,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.461,
+              "lat": 25.7144,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 127.206,
+              "lat": 28.9641,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 128.473,
+              "lat": 29.6534,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 130.177,
+              "lat": 30.5784,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 131.206,
+              "lat": 31.0355,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 132.553,
+              "lat": 31.676,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 134.006,
+              "lat": 32.2925,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 135.367,
+              "lat": 32.8857,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 137.021,
+              "lat": 33.5874,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 138.416,
+              "lat": 34.1947,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 139.574,
+              "lat": 34.6674,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 141.283,
+              "lat": 35.4216,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 142.669,
+              "lat": 36.0689,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 144.126,
+              "lat": 36.7253,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 145.274,
+              "lat": 37.214,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 147.053,
+              "lat": 37.9551,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 148.602,
+              "lat": 38.5592,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 150.095,
+              "lat": 39.1094,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 151.648,
+              "lat": 39.6724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 153.188,
+              "lat": 40.184,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 154.69,
+              "lat": 40.6558,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 156.415,
+              "lat": 41.173,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 158.049,
+              "lat": 41.6239,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 159.653,
+              "lat": 42.046,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 161.292,
+              "lat": 42.4478,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 162.976,
+              "lat": 42.8387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 164.713,
+              "lat": 43.1964,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 166.453,
+              "lat": 43.5267,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 168.256,
+              "lat": 43.847,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 170.083,
+              "lat": 44.1307,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 171.948,
+              "lat": 44.3893,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.805,
+              "lat": 44.6223,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.612,
+              "lat": 44.8088,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.487,
+              "lat": 44.9774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.419,
+              "lat": 45.1141,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.726,
+              "lat": 45.2076,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -176.888,
+              "lat": 45.2845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.017,
+              "lat": 45.333,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -173.116,
+              "lat": 45.3408,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.255,
+              "lat": 45.3208,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.422,
+              "lat": 45.2751,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -167.559,
+              "lat": 45.1891,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.715,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.873,
+              "lat": 44.9417,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.609,
+              "lat": 44.5002,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.035,
+              "lat": 44.6578,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 176.452,
+              "lat": 44.7997,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.881,
+              "lat": 44.9178,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.768,
+              "lat": 45.0513,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.804,
+              "lat": 45.1293,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -177.345,
+              "lat": 45.1912,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.913,
+              "lat": 45.2331,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -174.486,
+              "lat": 45.2598,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -172.636,
+              "lat": 45.2596,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.242,
+              "lat": 45.2466,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.809,
+              "lat": 45.2133,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -168.332,
+              "lat": 45.1631,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -166.829,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.371,
+              "lat": 44.9949,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.929,
+              "lat": 44.8845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.071,
+              "lat": 44.7154,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -160.706,
+              "lat": 44.5759,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -159.252,
+              "lat": 44.4023,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -157.844,
+              "lat": 44.2167,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -156.457,
+              "lat": 44.0168,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -155.071,
+              "lat": 43.7982,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -153.703,
+              "lat": 43.5613,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -151.89,
+              "lat": 43.2241,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -150.553,
+              "lat": 42.9525,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -149.202,
+              "lat": 42.6616,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -147.882,
+              "lat": 42.3603,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -146.591,
+              "lat": 42.0458,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -145.324,
+              "lat": 41.722,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -143.603,
+              "lat": 41.2482,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -142.316,
+              "lat": 40.8748,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -141.041,
+              "lat": 40.4854,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -139.781,
+              "lat": 40.0845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -138.561,
+              "lat": 39.6767,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -137.355,
+              "lat": 39.2549,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -136.197,
+              "lat": 38.8344,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -135.049,
+              "lat": 38.4021,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -133.527,
+              "lat": 37.8033,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -132.398,
+              "lat": 37.3387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -131.286,
+              "lat": 36.8633,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -130.189,
+              "lat": 36.3793,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -128.926,
+              "lat": 35.8038,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -127.71,
+              "lat": 35.2135,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -126.732,
+              "lat": 34.7272,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -125.679,
+              "lat": 34.2036,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -124.637,
+              "lat": 33.6774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -122.801,
+              "lat": 33.6139,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -121.293,
+              "lat": 33.6074,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -119.778,
+              "lat": 33.6081,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.271,
+              "lat": 33.7475,
+              "label": null
+            }
+          ]
+        },
+        {
+          "id": "rail-leg",
+          "mode": "RAIL",
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "dateTime": "2019-05-01T22:31:00",
+                  "timeZone": null,
+                  "description": "This should be the Out Gate event",
+                  "type": "OUT_GATE"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "BNSF Railway Co",
+              "location": {
+                "city": "Albuquerque",
+                "state": "NM",
+                "address": "",
+                "lat": 35.043854,
+                "lng": -106.65338
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "DESTINATION",
+              "events": [
+                {
+                  "dateTime": "2019-05-02T02:20:00",
+                  "timeZone": null,
+                  "description": "This should be the IN GATE/ARRIVED event",
+                  "type": "IN_GATE"
+                },
+                {
+                  "dateTime": "2019-05-02T03:05:00",
+                  "timeZone": null,
+                  "description": "This should be the Container's DERAMPED event",
+                  "type": "DERAMPED"
+                },
+                {
+                  "dateTime": "2019-05-02T03:50:00",
+                  "timeZone": null,
+                  "description": "This should be the time the carrier was notificed",
+                  "type": "NOTIFIED"
+                },
+                {
+                  "dateTime": "2019-05-02T06:15:00",
+                  "timeZone": null,
+                  "description": "This should be the time the container departed the yard",
+                  "type": "DEPARTED"
+                }
+              ]
+            }
+          ],
+          "carrierInfo": null,
+          "events": [
+            {
+              "dateTime": "2019-05-01T22:45:00",
+              "timeZone": null,
+              "description": "This should be the IN TRANSIT event",
+              "type": "IN_TRANSIT"
+            },
+            {
+              "dateTime": "2019-05-02T06:15:01",
+              "timeZone": null,
+              "description": "This should be the Final State event",
+              "type": "COMPLETED"
+            }
+          ],
+          "positions": [
+            {
+              "time": null,
+              "lng": -118.272703,
+              "lat": 33.723997,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.279381,
+              "lat": 33.732324,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.28096,
+              "lat": 33.766291,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.253765,
+              "lat": 33.799139,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.313065,
+              "lat": 33.81916,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.348525,
+              "lat": 33.855356,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.384456,
+              "lat": 33.909012,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.246635,
+              "lat": 33.93594,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.24287,
+              "lat": 33.986563,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.211324,
+              "lat": 34.01667,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.105869,
+              "lat": 33.976082,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.061405,
+              "lat": 33.929119,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.990918,
+              "lat": 33.876428,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.922666,
+              "lat": 33.868429,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.810341,
+              "lat": 33.865557,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.679309,
+              "lat": 33.874006,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.584336,
+              "lat": 33.890081,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.486782,
+              "lat": 33.894219,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.401783,
+              "lat": 33.934546,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.370555,
+              "lat": 33.974227,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.333941,
+              "lat": 34.014978,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.331027,
+              "lat": 34.044416,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.324769,
+              "lat": 34.076878,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.30301,
+              "lat": 34.116302,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.386595,
+              "lat": 34.205105,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.455913,
+              "lat": 34.278933,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.465265,
+              "lat": 34.333306,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.417071,
+              "lat": 34.327669,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.317091,
+              "lat": 34.378068,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.305479,
+              "lat": 34.555204,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.274111,
+              "lat": 34.781073,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.08897,
+              "lat": 34.887739,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -116.400246,
+              "lat": 34.798024,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -115.522769,
+              "lat": 34.521141,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.980207,
+              "lat": 34.918576,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.624755,
+              "lat": 34.847598,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.116479,
+              "lat": 35.068907,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -112.659044,
+              "lat": 35.319253,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -110.723343,
+              "lat": 35.03107,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -108.880663,
+              "lat": 35.497647,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -106.88554,
+              "lat": 34.763604,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -106.65338,
+              "lat": 35.043854,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -106.65138,
+              "lat": 35.079456,
+              "label": null
+            }
+          ],
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null
+        }
+      ]
+    },
+    {
+      "id": "1234567890",
+      "currentStatus": "IN_TRANSIT",
+      "currentStatusDateTime": "2019-04-24T10:20:00",
+      "eta": null,
+      "identifiers": [],
+      "eventsWithUnknownDates": null,
+      "legs": [
+        {
+          "id": "test-ocean-leg-id",
+          "mode": "OCEAN",
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "carrierInfo": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of Beihai",
+              "location": {
+                "city": "Beihai",
+                "state": "China",
+                "address": "",
+                "lat": 21.4799,
+                "lng": 109.107
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timeZone": null,
+                  "description": "Container arrived full",
+                  "type": "GATE_IN_FULL"
+                },
+                {
+                  "dateTime": "2019-04-21T20:02:00",
+                  "timeZone": null,
+                  "description": "Container has been loaded on ship",
+                  "type": "LOADED"
+                },
+                {
+                  "dateTime": "2019-04-21T22:53:00",
+                  "timeZone": null,
+                  "description": "Vessel has departed port of origin",
+                  "type": "DEPARTED"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "EN_ROUTE",
+              "appointmentWindow": null,
+              "type": "TRANSFER"
+            }
+          ],
+          "events": [
+            {
+              "dateTime": "2019-04-21T22:55:00",
+              "timeZone": null,
+              "description": "Vessel in transit to port of discharge",
+              "type": "IN_TRANSIT"
+            },
+            {
+              "dateTime": "2019-04-22T21:36:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "OTHER_HOLD"
+            },
+            {
+              "dateTime": "2019-04-23T18:00:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "LINE_HOLD"
+            },
+            {
+              "dateTime": "2019-04-24T10:20:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "CUSTOMS_HOLD"
+            },
+            {
+              "dateTime": "2019-04-23T19:45:00",
+              "timeZone": null,
+              "description": "Released",
+              "type": "OTHER_HOLD"
+            }
+          ],
+          "positions": [
+            {
+              "time": null,
+              "lng": 120.32,
+              "lat": 24.2998,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.117,
+              "lat": 25.5238,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.461,
+              "lat": 25.7144,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 127.206,
+              "lat": 28.9641,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 128.473,
+              "lat": 29.6534,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 130.177,
+              "lat": 30.5784,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 131.206,
+              "lat": 31.0355,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 132.553,
+              "lat": 31.676,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 134.006,
+              "lat": 32.2925,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 135.367,
+              "lat": 32.8857,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 137.021,
+              "lat": 33.5874,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 138.416,
+              "lat": 34.1947,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 139.574,
+              "lat": 34.6674,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 141.283,
+              "lat": 35.4216,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 142.669,
+              "lat": 36.0689,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 144.126,
+              "lat": 36.7253,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 145.274,
+              "lat": 37.214,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 147.053,
+              "lat": 37.9551,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 148.602,
+              "lat": 38.5592,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 150.095,
+              "lat": 39.1094,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 151.648,
+              "lat": 39.6724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 153.188,
+              "lat": 40.184,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 154.69,
+              "lat": 40.6558,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 156.415,
+              "lat": 41.173,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 158.049,
+              "lat": 41.6239,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 159.653,
+              "lat": 42.046,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 161.292,
+              "lat": 42.4478,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 162.976,
+              "lat": 42.8387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 164.713,
+              "lat": 43.1964,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 166.453,
+              "lat": 43.5267,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 168.256,
+              "lat": 43.847,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 170.083,
+              "lat": 44.1307,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 171.948,
+              "lat": 44.3893,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.805,
+              "lat": 44.6223,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.612,
+              "lat": 44.8088,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.487,
+              "lat": 44.9774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.419,
+              "lat": 45.1141,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.726,
+              "lat": 45.2076,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -176.888,
+              "lat": 45.2845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.017,
+              "lat": 45.333,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -173.116,
+              "lat": 45.3408,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.255,
+              "lat": 45.3208,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.422,
+              "lat": 45.2751,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -167.559,
+              "lat": 45.1891,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.715,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.873,
+              "lat": 44.9417,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.609,
+              "lat": 44.5002,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.035,
+              "lat": 44.6578,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 176.452,
+              "lat": 44.7997,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.881,
+              "lat": 44.9178,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.768,
+              "lat": 45.0513,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.804,
+              "lat": 45.1293,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -177.345,
+              "lat": 45.1912,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.913,
+              "lat": 45.2331,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -174.486,
+              "lat": 45.2598,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -172.636,
+              "lat": 45.2596,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.242,
+              "lat": 45.2466,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.809,
+              "lat": 45.2133,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -168.332,
+              "lat": 45.1631,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -166.829,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.371,
+              "lat": 44.9949,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.929,
+              "lat": 44.8845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.071,
+              "lat": 44.7154,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -160.706,
+              "lat": 44.5759,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -159.252,
+              "lat": 44.4023,
+              "label": null
+            }
+          ]
+        },
+        {
+          "id": "rail-leg",
+          "mode": "RAIL",
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "carrierInfo": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "EN_ROUTE",
+              "appointmentWindow": null,
+              "type": "TRANSFER"
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "BNSF Railway Co",
+              "location": {
+                "city": "Albuquerque",
+                "state": "NM",
+                "address": "",
+                "lat": 35.043854,
+                "lng": -106.65338
+              },
+              "status": "EN_ROUTE",
+              "appointmentWindow": null,
+              "type": "DESTINATION"
+            }
+          ],
+          "events": [],
+          "positions": []
+        }
+      ]
+    },
+    {
+      "id": "9876543210",
+      "currentStatus": "AVAILABLE",
+      "currentStatusDateTime": "2019-05-01T21:36:01",
+      "eta": null,
+      "identifiers": [],
+      "eventsWithUnknownDates": null,
+      "legs": [
+        {
+          "id": "test-ocean-leg-id",
+          "mode": "OCEAN",
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "carrierInfo": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of Beihai",
+              "location": {
+                "city": "Beihai",
+                "state": "China",
+                "address": "",
+                "lat": 21.4799,
+                "lng": 109.107
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timeZone": null,
+                  "description": "Container arrived full",
+                  "type": "GATE_IN_FULL"
+                },
+                {
+                  "dateTime": "2019-04-21T20:02:00",
+                  "timeZone": null,
+                  "description": "Container has been loaded on ship",
+                  "type": "LOADED"
+                },
+                {
+                  "dateTime": "2019-04-21T22:53:00",
+                  "timeZone": null,
+                  "description": "Vessel has departed port of origin",
+                  "type": "DEPARTED"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "ARRIVED",
+              "appointmentWindow": null,
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timeZone": null,
+                  "description": "The Vessel is approaching port of discharge",
+                  "type": "BERTHING"
+                },
+                {
+                  "dateTime": "2019-05-01T18:02:00",
+                  "timeZone": null,
+                  "description": "The vessel has arrived at port of discharge",
+                  "type": "ARRIVED"
+                },
+                {
+                  "dateTime": "2019-05-01T20:25:00",
+                  "timeZone": null,
+                  "description": "The container/trailer has been discharged from the vessel",
+                  "type": "DISCHARGED"
+                },
+                {
+                  "dateTime": "2019-05-01T21:36:01",
+                  "timeZone": null,
+                  "description": "The container/trailer is ready to be ramped",
+                  "type": "AVAILABLE"
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "dateTime": "2019-04-21T22:55:00",
+              "timeZone": null,
+              "description": "Vessel in transit to port of discharge",
+              "type": "IN_TRANSIT"
+            },
+            {
+              "dateTime": "2019-04-22T21:36:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "OTHER_HOLD"
+            },
+            {
+              "dateTime": "2019-04-23T18:00:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "LINE_HOLD"
+            },
+            {
+              "dateTime": "2019-04-24T10:20:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "CUSTOMS_HOLD"
+            },
+            {
+              "dateTime": "2019-04-23T19:45:00",
+              "timeZone": null,
+              "description": "Released",
+              "type": "OTHER_HOLD"
+            },
+            {
+              "dateTime": "2019-04-25T22:00:00",
+              "timeZone": null,
+              "description": "Released",
+              "type": "LINE_HOLD"
+            },
+            {
+              "dateTime": "2019-04-29T08:15:00",
+              "timeZone": null,
+              "description": "Released",
+              "type": "CUSTOMS_HOLD"
+            }
+          ],
+          "positions": [
+            {
+              "time": null,
+              "lng": 120.32,
+              "lat": 24.2998,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.117,
+              "lat": 25.5238,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.461,
+              "lat": 25.7144,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 127.206,
+              "lat": 28.9641,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 128.473,
+              "lat": 29.6534,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 130.177,
+              "lat": 30.5784,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 131.206,
+              "lat": 31.0355,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 132.553,
+              "lat": 31.676,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 134.006,
+              "lat": 32.2925,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 135.367,
+              "lat": 32.8857,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 137.021,
+              "lat": 33.5874,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 138.416,
+              "lat": 34.1947,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 139.574,
+              "lat": 34.6674,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 141.283,
+              "lat": 35.4216,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 142.669,
+              "lat": 36.0689,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 144.126,
+              "lat": 36.7253,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 145.274,
+              "lat": 37.214,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 147.053,
+              "lat": 37.9551,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 148.602,
+              "lat": 38.5592,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 150.095,
+              "lat": 39.1094,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 151.648,
+              "lat": 39.6724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 153.188,
+              "lat": 40.184,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 154.69,
+              "lat": 40.6558,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 156.415,
+              "lat": 41.173,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 158.049,
+              "lat": 41.6239,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 159.653,
+              "lat": 42.046,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 161.292,
+              "lat": 42.4478,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 162.976,
+              "lat": 42.8387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 164.713,
+              "lat": 43.1964,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 166.453,
+              "lat": 43.5267,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 168.256,
+              "lat": 43.847,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 170.083,
+              "lat": 44.1307,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 171.948,
+              "lat": 44.3893,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.805,
+              "lat": 44.6223,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.612,
+              "lat": 44.8088,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.487,
+              "lat": 44.9774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.419,
+              "lat": 45.1141,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.726,
+              "lat": 45.2076,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -176.888,
+              "lat": 45.2845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.017,
+              "lat": 45.333,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -173.116,
+              "lat": 45.3408,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.255,
+              "lat": 45.3208,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.422,
+              "lat": 45.2751,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -167.559,
+              "lat": 45.1891,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.715,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.873,
+              "lat": 44.9417,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.609,
+              "lat": 44.5002,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.035,
+              "lat": 44.6578,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 176.452,
+              "lat": 44.7997,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.881,
+              "lat": 44.9178,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.768,
+              "lat": 45.0513,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.804,
+              "lat": 45.1293,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -177.345,
+              "lat": 45.1912,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.913,
+              "lat": 45.2331,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -174.486,
+              "lat": 45.2598,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -172.636,
+              "lat": 45.2596,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.242,
+              "lat": 45.2466,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.809,
+              "lat": 45.2133,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -168.332,
+              "lat": 45.1631,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -166.829,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.371,
+              "lat": 44.9949,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.929,
+              "lat": 44.8845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.071,
+              "lat": 44.7154,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -160.706,
+              "lat": 44.5759,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -159.252,
+              "lat": 44.4023,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -157.844,
+              "lat": 44.2167,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -156.457,
+              "lat": 44.0168,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -155.071,
+              "lat": 43.7982,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -153.703,
+              "lat": 43.5613,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -151.89,
+              "lat": 43.2241,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -150.553,
+              "lat": 42.9525,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -149.202,
+              "lat": 42.6616,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -147.882,
+              "lat": 42.3603,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -146.591,
+              "lat": 42.0458,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -145.324,
+              "lat": 41.722,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -143.603,
+              "lat": 41.2482,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -142.316,
+              "lat": 40.8748,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -141.041,
+              "lat": 40.4854,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -139.781,
+              "lat": 40.0845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -138.561,
+              "lat": 39.6767,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -137.355,
+              "lat": 39.2549,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -136.197,
+              "lat": 38.8344,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -135.049,
+              "lat": 38.4021,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -133.527,
+              "lat": 37.8033,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -132.398,
+              "lat": 37.3387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -131.286,
+              "lat": 36.8633,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -130.189,
+              "lat": 36.3793,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -128.926,
+              "lat": 35.8038,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -127.71,
+              "lat": 35.2135,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -126.732,
+              "lat": 34.7272,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -125.679,
+              "lat": 34.2036,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -124.637,
+              "lat": 33.6774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -122.801,
+              "lat": 33.6139,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -121.293,
+              "lat": 33.6074,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -119.778,
+              "lat": 33.6081,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.271,
+              "lat": 33.7475,
+              "label": null
+            }
+          ]
+        },
+        {
+          "id": "rail-leg",
+          "mode": "RAIL",
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "carrierInfo": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "ARRIVED",
+              "appointmentWindow": null,
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timeZone": null,
+                  "description": "The Vessel is approaching port of discharge",
+                  "type": "BERTHING"
+                },
+                {
+                  "dateTime": "2019-05-01T18:02:00",
+                  "timeZone": null,
+                  "description": "The vessel has arrived at port of discharge",
+                  "type": "ARRIVED"
+                },
+                {
+                  "dateTime": "2019-05-01T20:25:00",
+                  "timeZone": null,
+                  "description": "The container/trailer has been discharged from the vessel",
+                  "type": "DISCHARGED"
+                },
+                {
+                  "dateTime": "2019-05-01T21:36:01",
+                  "timeZone": null,
+                  "description": "The container/trailer is ready to be ramped",
+                  "type": "AVAILABLE"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "BNSF Railway Co",
+              "location": {
+                "city": "Albuquerque",
+                "state": "NM",
+                "address": "",
+                "lat": 35.043854,
+                "lng": -106.65338
+              },
+              "status": "EN_ROUTE",
+              "appointmentWindow": null,
+              "type": "DESTINATION"
+            }
+          ],
+          "events": [],
+          "positions": []
+        }
+      ]
+    },
+    {
+      "id": "6306068949",
+      "currentStatus": "IN_TRANSIT",
+      "currentStatusDateTime": "2019-05-02T06:15:01",
+      "eta": null,
+      "identifiers": [],
+      "eventsWithUnknownDates": null,
+      "legs": [
+        {
+          "id": "test-ocean-leg-id",
+          "mode": "OCEAN",
+          "carrierInfo": null,
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of Beihai",
+              "location": {
+                "city": "Beihai",
+                "state": "China",
+                "address": "",
+                "lat": 21.4799,
+                "lng": 109.107
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "dateTime": "2019-04-21T19:53:00",
+                  "timeZone": null,
+                  "description": "Container arrived full",
+                  "type": "GATE_IN_FULL"
+                },
+                {
+                  "dateTime": "2019-04-21T20:02:00",
+                  "timeZone": null,
+                  "description": "Container has been loaded on ship",
+                  "type": "LOADED"
+                },
+                {
+                  "dateTime": "2019-04-21T22:53:00",
+                  "timeZone": null,
+                  "description": "Vessel has departed port of origin",
+                  "type": "DEPARTED"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timeZone": null,
+                  "description": "The Vessel is approaching port of discharge",
+                  "type": "BERTHING"
+                },
+                {
+                  "dateTime": "2019-05-01T18:02:00",
+                  "timeZone": null,
+                  "description": "The vessel has arrived at port of discharge",
+                  "type": "ARRIVED"
+                },
+                {
+                  "dateTime": "2019-05-01T20:25:00",
+                  "timeZone": null,
+                  "description": "The container/trailer has been discharged from the vessel",
+                  "type": "DISCHARGED"
+                },
+                {
+                  "dateTime": "2019-05-01T21:36:01",
+                  "timeZone": null,
+                  "description": "The container/trailer is ready to be ramped",
+                  "type": "AVAILABLE"
+                },
+                {
+                  "dateTime": "2019-05-01T21:45:00",
+                  "timeZone": null,
+                  "description": "Load of container/trailer on car",
+                  "type": "RAMPED"
+                },
+                {
+                  "dateTime": "2019-05-01T22:30:00",
+                  "timeZone": null,
+                  "description": "Intermodal Interchange/Intermodal Outgate",
+                  "type": "OUT_GATE"
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "dateTime": "2019-04-21T22:55:00",
+              "timeZone": null,
+              "description": "Vessel in transit to port of discharge",
+              "type": "IN_TRANSIT"
+            },
+            {
+              "dateTime": "2019-04-22T21:36:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "OTHER_HOLD"
+            },
+            {
+              "dateTime": "2019-04-23T18:00:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "LINE_HOLD"
+            },
+            {
+              "dateTime": "2019-04-24T10:20:00",
+              "timeZone": null,
+              "description": "Initiated",
+              "type": "CUSTOMS_HOLD"
+            },
+            {
+              "dateTime": "2019-04-23T19:45:00",
+              "timeZone": null,
+              "description": "Released",
+              "type": "OTHER_HOLD"
+            },
+            {
+              "dateTime": "2019-04-25T22:00:00",
+              "timeZone": null,
+              "description": "Released",
+              "type": "LINE_HOLD"
+            },
+            {
+              "dateTime": "2019-04-29T08:15:00",
+              "timeZone": null,
+              "description": "Released",
+              "type": "CUSTOMS_HOLD"
+            }
+          ],
+          "positions": [
+            {
+              "time": null,
+              "lng": 120.32,
+              "lat": 24.2998,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.117,
+              "lat": 25.5238,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.461,
+              "lat": 25.7144,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 127.206,
+              "lat": 28.9641,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 128.473,
+              "lat": 29.6534,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 130.177,
+              "lat": 30.5784,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 131.206,
+              "lat": 31.0355,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 132.553,
+              "lat": 31.676,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 134.006,
+              "lat": 32.2925,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 135.367,
+              "lat": 32.8857,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 137.021,
+              "lat": 33.5874,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 138.416,
+              "lat": 34.1947,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 139.574,
+              "lat": 34.6674,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 141.283,
+              "lat": 35.4216,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 142.669,
+              "lat": 36.0689,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 144.126,
+              "lat": 36.7253,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 145.274,
+              "lat": 37.214,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 147.053,
+              "lat": 37.9551,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 148.602,
+              "lat": 38.5592,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 150.095,
+              "lat": 39.1094,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 151.648,
+              "lat": 39.6724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 153.188,
+              "lat": 40.184,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 154.69,
+              "lat": 40.6558,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 156.415,
+              "lat": 41.173,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 158.049,
+              "lat": 41.6239,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 159.653,
+              "lat": 42.046,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 161.292,
+              "lat": 42.4478,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 162.976,
+              "lat": 42.8387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 164.713,
+              "lat": 43.1964,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 166.453,
+              "lat": 43.5267,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 168.256,
+              "lat": 43.847,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 170.083,
+              "lat": 44.1307,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 171.948,
+              "lat": 44.3893,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.805,
+              "lat": 44.6223,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.612,
+              "lat": 44.8088,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.487,
+              "lat": 44.9774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.419,
+              "lat": 45.1141,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.726,
+              "lat": 45.2076,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -176.888,
+              "lat": 45.2845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.017,
+              "lat": 45.333,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -173.116,
+              "lat": 45.3408,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.255,
+              "lat": 45.3208,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.422,
+              "lat": 45.2751,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -167.559,
+              "lat": 45.1891,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.715,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.873,
+              "lat": 44.9417,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.609,
+              "lat": 44.5002,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.035,
+              "lat": 44.6578,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 176.452,
+              "lat": 44.7997,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.881,
+              "lat": 44.9178,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.768,
+              "lat": 45.0513,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.804,
+              "lat": 45.1293,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -177.345,
+              "lat": 45.1912,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.913,
+              "lat": 45.2331,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -174.486,
+              "lat": 45.2598,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -172.636,
+              "lat": 45.2596,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.242,
+              "lat": 45.2466,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.809,
+              "lat": 45.2133,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -168.332,
+              "lat": 45.1631,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -166.829,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.371,
+              "lat": 44.9949,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.929,
+              "lat": 44.8845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.071,
+              "lat": 44.7154,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -160.706,
+              "lat": 44.5759,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -159.252,
+              "lat": 44.4023,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -157.844,
+              "lat": 44.2167,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -156.457,
+              "lat": 44.0168,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -155.071,
+              "lat": 43.7982,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -153.703,
+              "lat": 43.5613,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -151.89,
+              "lat": 43.2241,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -150.553,
+              "lat": 42.9525,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -149.202,
+              "lat": 42.6616,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -147.882,
+              "lat": 42.3603,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -146.591,
+              "lat": 42.0458,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -145.324,
+              "lat": 41.722,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -143.603,
+              "lat": 41.2482,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -142.316,
+              "lat": 40.8748,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -141.041,
+              "lat": 40.4854,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -139.781,
+              "lat": 40.0845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -138.561,
+              "lat": 39.6767,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -137.355,
+              "lat": 39.2549,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -136.197,
+              "lat": 38.8344,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -135.049,
+              "lat": 38.4021,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -133.527,
+              "lat": 37.8033,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -132.398,
+              "lat": 37.3387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -131.286,
+              "lat": 36.8633,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -130.189,
+              "lat": 36.3793,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -128.926,
+              "lat": 35.8038,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -127.71,
+              "lat": 35.2135,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -126.732,
+              "lat": 34.7272,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -125.679,
+              "lat": 34.2036,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -124.637,
+              "lat": 33.6774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -122.801,
+              "lat": 33.6139,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -121.293,
+              "lat": 33.6074,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -119.778,
+              "lat": 33.6081,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.271,
+              "lat": 33.7475,
+              "label": null
+            }
+          ]
+        },
+        {
+          "id": "rail-leg",
+          "mode": "RAIL",
+          "carrierInfo": null,
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "dateTime": "2019-05-01T16:53:00",
+                  "timeZone": null,
+                  "description": "The Vessel is approaching port of discharge",
+                  "type": "BERTHING"
+                },
+                {
+                  "dateTime": "2019-05-01T18:02:00",
+                  "timeZone": null,
+                  "description": "The vessel has arrived at port of discharge",
+                  "type": "ARRIVED"
+                },
+                {
+                  "dateTime": "2019-05-01T20:25:00",
+                  "timeZone": null,
+                  "description": "The container/trailer has been discharged from the vessel",
+                  "type": "DISCHARGED"
+                },
+                {
+                  "dateTime": "2019-05-01T21:36:01",
+                  "timeZone": null,
+                  "description": "The container/trailer is ready to be ramped",
+                  "type": "AVAILABLE"
+                },
+                {
+                  "dateTime": "2019-05-01T21:45:00",
+                  "timeZone": null,
+                  "description": "Load of container/trailer on car",
+                  "type": "RAMPED"
+                },
+                {
+                  "dateTime": "2019-05-01T22:30:00",
+                  "timeZone": null,
+                  "description": "Intermodal Interchange/Intermodal Outgate",
+                  "type": "OUT_GATE"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "BNSF Railway Co",
+              "location": {
+                "city": "Albuquerque",
+                "state": "NM",
+                "address": "",
+                "lat": 35.043854,
+                "lng": -106.65338
+              },
+              "status": "EN_ROUTE",
+              "appointmentWindow": null,
+              "type": "DESTINATION"
+            }
+          ],
+          "events": [
+            {
+              "dateTime": "2019-05-01T22:45:00",
+              "timeZone": null,
+              "description": null,
+              "type": "IN_TRANSIT"
+            }
+          ],
+          "positions": [
+            {
+              "time": null,
+              "lng": -118.272703,
+              "lat": 33.723997,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.279381,
+              "lat": 33.732324,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.28096,
+              "lat": 33.766291,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.253765,
+              "lat": 33.799139,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.313065,
+              "lat": 33.81916,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.348525,
+              "lat": 33.855356,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.384456,
+              "lat": 33.909012,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.246635,
+              "lat": 33.93594,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.24287,
+              "lat": 33.986563,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.211324,
+              "lat": 34.01667,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.105869,
+              "lat": 33.976082,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.061405,
+              "lat": 33.929119,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.990918,
+              "lat": 33.876428,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.922666,
+              "lat": 33.868429,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.810341,
+              "lat": 33.865557,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.679309,
+              "lat": 33.874006,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.584336,
+              "lat": 33.890081,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.486782,
+              "lat": 33.894219,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.401783,
+              "lat": 33.934546,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.370555,
+              "lat": 33.974227,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.333941,
+              "lat": 34.014978,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.331027,
+              "lat": 34.044416,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.324769,
+              "lat": 34.076878,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.30301,
+              "lat": 34.116302,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.386595,
+              "lat": 34.205105,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.455913,
+              "lat": 34.278933,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.465265,
+              "lat": 34.333306,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.417071,
+              "lat": 34.327669,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.317091,
+              "lat": 34.378068,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.305479,
+              "lat": 34.555204,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.274111,
+              "lat": 34.781073,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.08897,
+              "lat": 34.887739,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -116.400246,
+              "lat": 34.798024,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -116.0478,
+              "lat": 34.696335,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -115.522769,
+              "lat": 34.521141,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -115.223568,
+              "lat": 34.749339,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.980207,
+              "lat": 34.918576,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.624755,
+              "lat": 34.847598,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.116479,
+              "lat": 35.068907,
+              "label": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6309021222",
+      "currentStatus": "COMPLETED",
+      "currentStatusDateTime": "2019-05-02T06:15:01",
+      "eta": null,
+      "identifiers": [],
+      "eventsWithUnknownDates": null,
+      "legs": [
+        {
+          "id": "test-ocean-leg-id",
+          "mode": "OCEAN",
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "carrierInfo": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of Beihai",
+              "location": {
+                "city": "Beihai",
+                "state": "China",
+                "address": "",
+                "lat": 21.4799,
+                "lng": 109.107
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "ORIGIN",
+              "events": [
+                {
+                  "dateTime": {
+                    "dateTimeUtc": "2019-04-21T19:53:00",
+                    "timezone": null
+                  },
+                  "description": "Container arrived full",
+                  "type": "GATE_IN_FULL"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-04-21T20:02:00" },
+                  "description": "Container has been loaded on ship",
+                  "type": "LOADED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-04-21T22:53:00" },
+                  "description": "Vessel has departed port of origin",
+                  "type": "DEPARTED"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T16:53:00" },
+                  "description": "The Vessel is approaching port of discharge",
+                  "type": "BERTHING"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T18:02:00" },
+                  "description": "The vessel has arrived at port of discharge",
+                  "type": "ARRIVED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T20:25:00" },
+                  "description": "The container/trailer has been discharged from the vessel",
+                  "type": "DISCHARGED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T21:36:01" },
+                  "description": "The container/trailer is ready to be ramped",
+                  "type": "AVAILABLE"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T21:45:00" },
+                  "description": "Load of container/trailer on car",
+                  "type": "RAMPED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T22:30:00" },
+                  "description": "Intermodal Interchange/Intermodal Outgate",
+                  "type": "OUT_GATE"
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "dateTime": { "dateTimeUtc": "2019-04-21T22:55:00" },
+              "description": "Vessel in transit to port of discharge",
+              "type": "IN_TRANSIT"
+            },
+            {
+              "dateTime": { "dateTimeUtc": "2019-04-22T21:36:00" },
+              "description": "Initiated",
+              "type": "OTHER_HOLD"
+            },
+            {
+              "dateTime": { "dateTimeUtc": "2019-04-23T18:00:00" },
+              "description": "Initiated",
+              "type": "LINE_HOLD"
+            },
+            {
+              "dateTime": { "dateTimeUtc": "2019-04-24T10:20:00" },
+              "description": "Initiated",
+              "type": "CUSTOMS_HOLD"
+            },
+            {
+              "dateTime": { "dateTimeUtc": "2019-04-23T19:45:00" },
+              "description": "Released",
+              "type": "OTHER_HOLD"
+            },
+            {
+              "dateTime": { "dateTimeUtc": "2019-04-25T22:00:00" },
+              "description": "Released",
+              "type": "LINE_HOLD"
+            },
+            {
+              "dateTime": { "dateTimeUtc": "2019-04-29T08:15:00" },
+              "description": "Released",
+              "type": "CUSTOMS_HOLD"
+            }
+          ],
+          "positions": [
+            {
+              "time": null,
+              "lng": 120.32,
+              "lat": 24.2998,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.117,
+              "lat": 25.5238,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 121.461,
+              "lat": 25.7144,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 127.206,
+              "lat": 28.9641,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 128.473,
+              "lat": 29.6534,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 130.177,
+              "lat": 30.5784,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 131.206,
+              "lat": 31.0355,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 132.553,
+              "lat": 31.676,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 134.006,
+              "lat": 32.2925,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 135.367,
+              "lat": 32.8857,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 137.021,
+              "lat": 33.5874,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 138.416,
+              "lat": 34.1947,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 139.574,
+              "lat": 34.6674,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 141.283,
+              "lat": 35.4216,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 142.669,
+              "lat": 36.0689,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 144.126,
+              "lat": 36.7253,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 145.274,
+              "lat": 37.214,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 147.053,
+              "lat": 37.9551,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 148.602,
+              "lat": 38.5592,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 150.095,
+              "lat": 39.1094,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 151.648,
+              "lat": 39.6724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 153.188,
+              "lat": 40.184,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 154.69,
+              "lat": 40.6558,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 156.415,
+              "lat": 41.173,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 158.049,
+              "lat": 41.6239,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 159.653,
+              "lat": 42.046,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 161.292,
+              "lat": 42.4478,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 162.976,
+              "lat": 42.8387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 164.713,
+              "lat": 43.1964,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 166.453,
+              "lat": 43.5267,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 168.256,
+              "lat": 43.847,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 170.083,
+              "lat": 44.1307,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 171.948,
+              "lat": 44.3893,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.805,
+              "lat": 44.6223,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.612,
+              "lat": 44.8088,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.487,
+              "lat": 44.9774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.419,
+              "lat": 45.1141,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.726,
+              "lat": 45.2076,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -176.888,
+              "lat": 45.2845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.017,
+              "lat": 45.333,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -173.116,
+              "lat": 45.3408,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.255,
+              "lat": 45.3208,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.422,
+              "lat": 45.2751,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -167.559,
+              "lat": 45.1891,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.715,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.873,
+              "lat": 44.9417,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.014,
+              "lat": 44.7724,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 173.609,
+              "lat": 44.5002,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 175.035,
+              "lat": 44.6578,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 176.452,
+              "lat": 44.7997,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 177.881,
+              "lat": 44.9178,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": 179.768,
+              "lat": 45.0513,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -178.804,
+              "lat": 45.1293,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -177.345,
+              "lat": 45.1912,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -175.913,
+              "lat": 45.2331,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -174.486,
+              "lat": 45.2598,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -172.636,
+              "lat": 45.2596,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -171.242,
+              "lat": 45.2466,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -169.809,
+              "lat": 45.2133,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -168.332,
+              "lat": 45.1631,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -166.829,
+              "lat": 45.0842,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -165.371,
+              "lat": 44.9949,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -163.929,
+              "lat": 44.8845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -162.071,
+              "lat": 44.7154,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -160.706,
+              "lat": 44.5759,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -159.252,
+              "lat": 44.4023,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -157.844,
+              "lat": 44.2167,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -156.457,
+              "lat": 44.0168,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -155.071,
+              "lat": 43.7982,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -153.703,
+              "lat": 43.5613,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -151.89,
+              "lat": 43.2241,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -150.553,
+              "lat": 42.9525,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -149.202,
+              "lat": 42.6616,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -147.882,
+              "lat": 42.3603,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -146.591,
+              "lat": 42.0458,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -145.324,
+              "lat": 41.722,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -143.603,
+              "lat": 41.2482,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -142.316,
+              "lat": 40.8748,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -141.041,
+              "lat": 40.4854,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -139.781,
+              "lat": 40.0845,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -138.561,
+              "lat": 39.6767,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -137.355,
+              "lat": 39.2549,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -136.197,
+              "lat": 38.8344,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -135.049,
+              "lat": 38.4021,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -133.527,
+              "lat": 37.8033,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -132.398,
+              "lat": 37.3387,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -131.286,
+              "lat": 36.8633,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -130.189,
+              "lat": 36.3793,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -128.926,
+              "lat": 35.8038,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -127.71,
+              "lat": 35.2135,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -126.732,
+              "lat": 34.7272,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -125.679,
+              "lat": 34.2036,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -124.637,
+              "lat": 33.6774,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -122.801,
+              "lat": 33.6139,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -121.293,
+              "lat": 33.6074,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -119.778,
+              "lat": 33.6081,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.271,
+              "lat": 33.7475,
+              "label": null
+            }
+          ]
+        },
+        {
+          "id": "rail-leg",
+          "mode": "RAIL",
+          "equipmentIdentifiers": null,
+          "shipmentIdentifiers": null,
+          "carrierInfo": null,
+          "stops": [
+            {
+              "stopNumber": 1,
+              "stopName": "Port of LA",
+              "location": {
+                "city": "Los Angeles",
+                "state": "CA",
+                "address": "",
+                "lat": 33.740103,
+                "lng": -118.281422
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "TRANSFER",
+              "events": [
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T16:53:00" },
+                  "description": "The Vessel is approaching port of discharge",
+                  "type": "BERTHING"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T18:02:00" },
+                  "description": "The vessel has arrived at port of discharge",
+                  "type": "ARRIVED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T20:25:00" },
+                  "description": "The container/trailer has been discharged from the vessel",
+                  "type": "DISCHARGED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T21:36:01" },
+                  "description": "The container/trailer is ready to be ramped",
+                  "type": "AVAILABLE"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T21:45:00" },
+                  "description": "Load of container/trailer on car",
+                  "type": "RAMPED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-01T22:30:00" },
+                  "description": "Intermodal Interchange/Intermodal Outgate",
+                  "type": "OUT_GATE"
+                }
+              ]
+            },
+            {
+              "stopNumber": 2,
+              "stopName": "BNSF Railway Co",
+              "location": {
+                "city": "Albuquerque",
+                "state": "NM",
+                "address": "",
+                "lat": 35.043854,
+                "lng": -106.65338
+              },
+              "status": "DEPARTED",
+              "appointmentWindow": null,
+              "type": "DESTINATION",
+              "events": [
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-02T02:20:00" },
+                  "description": "Intermodal Interchange/Intermodal Ingate",
+                  "type": "IN_GATE"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-02T03:05:00" },
+                  "description": "Unload of container/trailer from car",
+                  "type": "DERAMPED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-02T03:50:00" },
+                  "description": "Notified Destination Party",
+                  "type": "NOTIFIED"
+                },
+                {
+                  "dateTime": { "dateTimeUtc": "2019-05-02T06:15:00" },
+                  "description": "Enroute to non-RR facility",
+                  "type": "DEPARTED"
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "dateTime": { "dateTimeUtc": "2019-05-01T22:45:00" },
+              "description": null,
+              "type": "IN_TRANSIT"
+            },
+            {
+              "dateTime": { "dateTimeUtc": "2019-05-02T06:15:01" },
+              "description": null,
+              "type": "COMPLETED"
+            }
+          ],
+          "positions": [
+            {
+              "time": null,
+              "lng": -118.272703,
+              "lat": 33.723997,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.279381,
+              "lat": 33.732324,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.28096,
+              "lat": 33.766291,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.253765,
+              "lat": 33.799139,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.313065,
+              "lat": 33.81916,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.348525,
+              "lat": 33.855356,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.384456,
+              "lat": 33.909012,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.246635,
+              "lat": 33.93594,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.24287,
+              "lat": 33.986563,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.211324,
+              "lat": 34.01667,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.105869,
+              "lat": 33.976082,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -118.061405,
+              "lat": 33.929119,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.990918,
+              "lat": 33.876428,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.922666,
+              "lat": 33.868429,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.810341,
+              "lat": 33.865557,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.679309,
+              "lat": 33.874006,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.584336,
+              "lat": 33.890081,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.486782,
+              "lat": 33.894219,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.401783,
+              "lat": 33.934546,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.370555,
+              "lat": 33.974227,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.333941,
+              "lat": 34.014978,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.331027,
+              "lat": 34.044416,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.324769,
+              "lat": 34.076878,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.30301,
+              "lat": 34.116302,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.386595,
+              "lat": 34.205105,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.455913,
+              "lat": 34.278933,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.465265,
+              "lat": 34.333306,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.417071,
+              "lat": 34.327669,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.317091,
+              "lat": 34.378068,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.305479,
+              "lat": 34.555204,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.274111,
+              "lat": 34.781073,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -117.08897,
+              "lat": 34.887739,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -116.400246,
+              "lat": 34.798024,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -116.0478,
+              "lat": 34.696335,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -115.522769,
+              "lat": 34.521141,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -115.223568,
+              "lat": 34.749339,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.980207,
+              "lat": 34.918576,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.624755,
+              "lat": 34.847598,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -114.116479,
+              "lat": 35.068907,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -113.428571,
+              "lat": 35.527131,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -112.659044,
+              "lat": 35.319253,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -111.644097,
+              "lat": 35.195504,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -110.723343,
+              "lat": 35.03107,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -109.33693,
+              "lat": 35.212639,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -108.880663,
+              "lat": 35.497647,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -108.038937,
+              "lat": 35.36372,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -107.507808,
+              "lat": 35.046762,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -106.88554,
+              "lat": 34.763604,
+              "label": null
+            },
+            {
+              "time": null,
+              "lng": -106.65338,
+              "lat": 35.043854,
+              "label": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="188px" height="64px" viewBox="0 0 188 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>ocean</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ocean" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic/multi-modal/ocean" fill="#575451">
+            <path d="M188,30 C187.854,44.0783 178.689,53.1782 171.249,53.2789 C164.809,53.3661 160.267,63 160.267,63 L25.1702,63 C25.1702,63 26.5497,57.0606 14.6334,52.957 C2.7242,48.8561 1.002,38.9007 1,38.8889 L129.454,38.8889 L150.85,32 L156.097,30 L188,30 Z M55,37 L77,37 L77,30 L55,30 L55,37 Z M9,37 L31,37 L31,30 L9,30 L9,37 Z M80,37 L102,37 L102,30 L80,30 L80,37 Z M105,37 L127,37 L127,30 L105,30 L105,37 Z M35,37 L51,37 L51,1 L35,1 L35,37 Z M150.85,30 L130,36.713 L130,30 L150.85,30 Z M55,28 L77,28 L77,21 L55,21 L55,28 Z M9,28 L31,28 L31,21 L9,21 L9,28 Z M80,28 L102,28 L102,21 L80,21 L80,28 Z M105,28 L127,28 L127,21 L105,21 L105,28 Z M130,28 L152,28 L152,21 L130,21 L130,28 Z M155,28 L177,28 L177,21 L155,21 L155,28 Z M55,19 L77,19 L77,12 L55,12 L55,19 Z M9,19 L31,19 L31,12 L9,12 L9,19 Z M80,19 L102,19 L102,12 L80,12 L80,19 Z M105,19 L127,19 L127,12 L105,12 L105,19 Z" id="Ocean"></path>
+        </g>
+    </g>
+</svg>

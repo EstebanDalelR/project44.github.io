@@ -1,0 +1,24 @@
+<svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <defs>
+                  <path
+                    id="gaugeA"
+                    d="M17.3 18c1.7-1.5 2.7-3.6 2.7-6a8 8 0 1 0-16 0c0 2.4 1 4.5 2.7 6 1.5-1.3 3.3-2 5.3-2s3.9.7 5.3 2zM12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10a10 10 0 1 1 0-20zM7 9a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-2.6-2.9c.5.2.7.8.6 1.3l-1.4 3.4c.2.3.4.7.4 1.2a2 2 0 1 1-4 0c0-1 .7-1.9 1.7-2l1.4-3.3c.2-.6.8-.8 1.3-.6z"
+                  />
+                </defs>
+                <g fill="none" fillRule="evenodd">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <mask id="gaugeB" fill="#fff">
+                    <use xlinkHref="#gaugeA" />
+                  </mask>
+                  <use fill="#000" fillRule="nonzero" xlinkHref="#gaugeA" />
+                  <g fill="#575451" mask="url(#gaugeB)">
+                    <path d="M0 0h24v24H0z" />
+                  </g>
+                </g>
+              </svg>
